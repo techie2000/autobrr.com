@@ -1,6 +1,7 @@
 ---
 slug: 1.29
 title: v1.29.0
+description: "autobrr v1.29.0 release notes: 13 new features and 22 bug fixes, including check for updates reading from config and set downloadClientId for arr clients."
 authors: [rogerrabbit]
 ---
 
@@ -86,5 +87,5 @@ authors: [rogerrabbit]
 ## What to do next?
 
 - Read the [documentation](https://autobrr.com)
-- Join our [Discord server](https://discord.gg/WQ2eUycxyT)
+- Join our [Discord server](https://discord.autobrr.com/)
 

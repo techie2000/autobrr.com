@@ -1,6 +1,7 @@
 ---
 slug: 1.38.0
 title: v1.38.0
+description: "autobrr v1.38.0 release notes: 2 new features and 3 bug fixes, including add Nyaa and disable auto chan part when using bouncer."
 authors: [rogerrabbit]
 ---
 
@@ -33,4 +34,4 @@ authors: [rogerrabbit]
 ## What to do next?
 
 - Read the [documentation](https://autobrr.com)
-- Join our [Discord server](https://discord.gg/WQ2eUycxyT)
+- Join our [Discord server](https://discord.autobrr.com/)

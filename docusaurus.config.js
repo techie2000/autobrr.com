@@ -8,28 +8,30 @@ const config = {
   baseUrl: "/",
   trailingSlash: false,
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "autobrr", // Usually your GitHub org/user name.
-  projectName: "autobrr", // Usually your repo name.
+  organizationName: "autobrr",
+  projectName: "autobrr",
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    }
+  },
+
+  future: {
+    v4: true,
+    faster: true,
+  },
 
   themes: [
-    // ... Your other themes.
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
-        // ... Your options.
-        // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
         docsRouteBasePath: "/",
         language: "en",
         docsDir: "docs",
         searchBarShortcutHint: false,
-        // For Docs using Chinese, The `language` is recommended to set to:
-        // ```
-        // language: ["en", "zh"],
-        // ```
       }),
     ],
   ],
@@ -42,25 +44,25 @@ const config = {
           blogTitle: "Release Notes",
           routeBasePath: "/release-notes",
           blogSidebarTitle: "Release Notes",
-          blogSidebarCount: 'ALL',
+          blogSidebarCount: "ALL",
+          // release notes are meant to be read in full on the list page
+          onUntruncatedBlogPosts: "ignore",
         },
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
           editUrl: "https://github.com/autobrr/autobrr.com/tree/main/",
-          //sidebarCollapsible: false,
           routeBasePath: "/",
-          showLastUpdateTime: false,
+          showLastUpdateTime: true,
           includeCurrentVersion: true,
           lastVersion: "current",
           versions: {
             current: {
-              label: "Latest", // latest will always be the content of /docs
+              label: "Latest",
               path: "",
               banner: "none",
               badge: true,
             },
-            // list older archived versiones here after running `yarn docusaurus docs:version <version_number>`
+            // list older archived versions here after running `yarn docusaurus docs:version <version_number>`
             //"1.3.0": {
             //  label: "1.3.0",
             //  path: "1.3.0",
@@ -74,7 +76,14 @@ const config = {
         sitemap: {
           changefreq: "weekly",
           priority: 0.5,
-          ignorePatterns: ["/tags/**"],
+          lastmod: "date",
+          ignorePatterns: [
+            "/tags/**",
+            "/search",
+            "/release-notes/authors",
+            "/release-notes/authors/**",
+            "/release-notes/page/**",
+          ],
           filename: "sitemap.xml",
         },
       },
@@ -115,13 +124,12 @@ const config = {
           position: "left",
         },
         //{
-        //{
-        //  type: "docsVersionDropdown", // disabling until its of use
+        //  type: "docsVersionDropdown", // Reserved for future versioned documentation
         //  position: "left",
         //  dropdownActiveClassDisabled: false,
         //},
         {
-          href: "https://discord.gg/WQ2eUycxyT",
+          href: "https://discord.autobrr.com/",
           position: "right",
           className: "header-discord-link",
           "aria-label": "Discord",
@@ -139,12 +147,32 @@ const config = {
       ],
     },
     colorMode: {
-      defaultMode: "dark",
+      //defaultMode: "dark",
+      respectPrefersColorScheme: true,
     },
     prism: {
       theme: themes.vsLight,
       darkTheme: themes.oceanicNext,
-      additionalLanguages: ["systemd", "nginx", "toml", "docker", "bash", "json"],
+      additionalLanguages: [
+        "systemd",
+        "nginx",
+        "toml",
+        "docker",
+        "bash",
+        "json",
+      ],
+    },
+    zoom: {
+      selector: ".markdown img",
+      background: {
+        light: "rgba(255, 255, 255, 0.8)",
+        dark: "rgba(50, 50, 50, 0.8)",
+      },
+      config: {
+        margin: 24,
+        background: "#0D1117E6",
+        scrollOffset: 0,
+      },
     },
   },
 
@@ -157,7 +185,23 @@ const config = {
         },
       };
     },
-    // ...
+    "docusaurus-plugin-image-zoom",
+    [
+      "docusaurus-plugin-copy-page-button",
+      {
+        placement: "article",
+      },
+    ],
+    [
+      "docusaurus-plugin-llms",
+      {
+        docsDir: "docs",
+        generateLLMsTxt: true,
+        generateLLMsFullTxt: true,
+        excludeImports: true,
+        removeDuplicateHeadings: true,
+      },
+    ],
   ],
 };
 

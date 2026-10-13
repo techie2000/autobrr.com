@@ -1,6 +1,7 @@
 ---
 slug: 1.30
 title: v1.30.0
+description: "autobrr v1.30.0 release notes: 7 new features and 4 bug fixes, including IRC do not require auth for irc.rizon.net and add Bemaniso."
 authors: [rogerrabbit]
 ---
 
@@ -33,5 +34,5 @@ authors: [rogerrabbit]
 ## What to do next?
 
 - Read the [documentation](https://autobrr.com)
-- Join our [Discord server](https://discord.gg/WQ2eUycxyT)
+- Join our [Discord server](https://discord.autobrr.com/)
 

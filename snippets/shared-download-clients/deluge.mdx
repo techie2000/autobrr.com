@@ -29,11 +29,38 @@ printf "10.0.0.1\n$(hostname -f)\n$(whoami)\n$(sed -rn 's/(.*)"daemon_port": (.*
 
 <details>
 
+<summary>GigaRapid</summary>
+
+- Host: `<hostname>` (Each application has a **unique hostname**, which can be found on the apps page)
+- Port: `<exposed_daemon_port>`
+- TLS: Enabled
+- Username: `<username>`
+- Password: `<password>`
+
+</details>
+
+<details>
+
 <summary>Hostingby.design</summary>
 
 - Host: `<hostname>.itsby.design`
 - Port: `DAEMON_PORT`
 - TLS: Enabled
+- Username: `<username>`
+- Password: `<password>`
+
+</details>
+
+<details>
+
+<summary>RapidSeedbox - Premium</summary>
+
+Use the following settings :
+
+- Type: 'Deluge 2' (Not 'Deluge')
+- Host: `127.0.0.1`
+- Port: `58846`
+- TLS: Disabled
 - Username: `<username>`
 - Password: `<password>`
 
@@ -77,9 +104,9 @@ printf "10.0.0.1\n$(hostname -f)\n$(whoami)\n$(sed -rn 's/(.*)"daemon_port": (.*
 
 <details>
 
-<summary>WhatBox</summary>
+<summary>Whatbox.ca</summary>
 
-- Host: `<servername>.whatbox.ca`
+- Host: `deluge.<yourdomain>.box.ca`
 - Port: `DAEMON_PORT`
 - TLS: Enabled
 - Skip TLS verification (insecure): Off

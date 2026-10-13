@@ -1,6 +1,7 @@
 ---
 slug: 1.31
 title: v1.31.0
+description: "autobrr v1.31.0 release notes: 2 new features and 5 bug fixes, including feat(feeds): improve file size parsing."
 authors: [rogerrabbit]
 ---
 
@@ -31,5 +32,5 @@ authors: [rogerrabbit]
 ## What to do next?
 
 - Read the [documentation](https://autobrr.com)
-- Join our [Discord server](https://discord.gg/WQ2eUycxyT)
+- Join our [Discord server](https://discord.autobrr.com/)
 

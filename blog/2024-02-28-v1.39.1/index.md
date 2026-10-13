@@ -1,6 +1,7 @@
 ---
 slug: 1.39.1
 title: v1.39.1
+description: "autobrr v1.39.1 release notes: 2 bug fixes, including migrations log correct upgrade var version and allow insecure TLS cipher suites."
 authors: [rogerrabbit]
 ---
 
@@ -21,4 +22,4 @@ This is a fix needed for a lot of IRC networks running old TLS cipher suites.
 ## What to do next?
 
 - Read the [documentation](https://autobrr.com)
-- Join our [Discord server](https://discord.gg/WQ2eUycxyT)
+- Join our [Discord server](https://discord.autobrr.com/)

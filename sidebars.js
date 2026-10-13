@@ -15,20 +15,26 @@ module.exports = {
       label: "Installation & Updates",
       collapsed: false,
       items: [
+        "installation/intro",
+        "installation/seedbox",
         "installation/linux",
         "installation/docker",
-        "installation/shared-seedbox",
         "installation/macos",
         "installation/windows",
         {
           type: "category",
           label: "Reverse proxy",
+          link: {
+            type: "doc",
+            id: "installation/reverse-proxy/index",
+          },
           items: [
             "installation/reverse-proxy/caddy",
             "installation/reverse-proxy/lighttpd",
             "installation/reverse-proxy/nginx",
             "installation/reverse-proxy/swag",
             "installation/reverse-proxy/traefik",
+            "installation/reverse-proxy/tailscale-serve",
           ],
         },
         {
@@ -58,6 +64,8 @@ module.exports = {
         },
         "configuration/feeds",
         "configuration/notifications",
+        "configuration/authentication",
+        "configuration/proxy",
       ],
     },
     {
@@ -65,14 +73,18 @@ module.exports = {
       label: "Filters",
       collapsed: true,
       items: [
-        "filters/basics",
+        "filters/intro",
+        "filters/general",
         "filters/tv-movies",
         "filters/music",
         "filters/advanced",
         "filters/external",
         "filters/actions",
+        "filters/skip-duplicates",
         "filters/macros",
+        "filters/lists",
         "filters/omegabrr",
+        "filters/cross-seed-qui",
         "filters/examples",
         "filters/categories",
         "filters/freeleech",
@@ -85,9 +97,16 @@ module.exports = {
       items: ["usage/search", "usage/tips", "usage/account"],
     },
     {
-      type: "doc",
+      type: "category",
       label: "3rd party tools",
-      id: "3rd-party-tools",
+      collapsed: true,
+      items: [
+        "3rd-party-tools/cross-seed",
+        "3rd-party-tools/manage-torrents",
+        "3rd-party-tools/upgraderr",
+        "3rd-party-tools/seasonpackarr",
+        "3rd-party-tools/sizechecker",
+      ],
     },
     {
       type: "doc",
@@ -101,8 +120,18 @@ module.exports = {
     },
     {
       type: "doc",
+      label: "Community",
+      id: "community",
+    },
+    {
+      type: "doc",
       label: "contributing",
       id: "contributing",
+    },
+    {
+      type: "doc",
+      label: "Support Development",
+      id: "support",
     },
   ],
 };

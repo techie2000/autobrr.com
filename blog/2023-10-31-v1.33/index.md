@@ -1,6 +1,7 @@
 ---
 slug: 1.33
 title: v1.33.0
+description: "autobrr v1.33.0 release notes: 4 new features and 4 bug fixes, including Transmission support seedtime and ratiolimit and add ABNormal."
 authors: [rogerrabbit]
 ---
 
@@ -34,4 +35,4 @@ authors: [rogerrabbit]
 ## What to do next?
 
 - Read the [documentation](https://autobrr.com)
-- Join our [Discord server](https://discord.gg/WQ2eUycxyT)
+- Join our [Discord server](https://discord.autobrr.com/)

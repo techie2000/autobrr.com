@@ -1,6 +1,7 @@
 ---
 slug: 1.32
 title: v1.32.0
+description: "autobrr v1.32.0 release notes: 14 new features and 10 bug fixes, including Transmission set label and improve caching."
 authors: [rogerrabbit]
 ---
 
@@ -51,5 +52,5 @@ authors: [rogerrabbit]
 ## What to do next?
 
 - Read the [documentation](https://autobrr.com)
-- Join our [Discord server](https://discord.gg/WQ2eUycxyT)
+- Join our [Discord server](https://discord.autobrr.com/)
 

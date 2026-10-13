@@ -1,6 +1,7 @@
 ---
 slug: 1.37.0
 title: v1.37.0
+description: "autobrr v1.37.0 release notes: 5 new features and 3 bug fixes, including add BrokenStones and add ToonsForMe."
 authors: [rogerrabbit]
 ---
 
@@ -29,4 +30,4 @@ authors: [rogerrabbit]
 ## What to do next?
 
 - Read the [documentation](https://autobrr.com)
-- Join our [Discord server](https://discord.gg/WQ2eUycxyT)
+- Join our [Discord server](https://discord.autobrr.com/)

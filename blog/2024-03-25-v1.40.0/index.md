@@ -1,6 +1,7 @@
 ---
 slug: 1.40.0
 title: v1.40.0
+description: "autobrr v1.40.0 release notes: 8 new features and 8 bug fixes, including add sources and codecs and BTFiles add channel password field."
 authors: [rogerrabbit]
 ---
 
@@ -42,4 +43,4 @@ authors: [rogerrabbit]
 ## What to do next?
 
 - Read the [documentation](https://autobrr.com)
-- Join our [Discord server](https://discord.gg/WQ2eUycxyT)
+- Join our [Discord server](https://discord.autobrr.com/)

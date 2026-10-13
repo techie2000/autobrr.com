@@ -1,6 +1,7 @@
 ---
 slug: 1.36.0
 title: v1.36.0
+description: "autobrr v1.36.0 release notes: 5 new features and 3 bug fixes, including improve RSS size parsing and GGn improve release name parsing."
 authors: [rogerrabbit]
 ---
 
@@ -36,4 +37,4 @@ authors: [rogerrabbit]
 ## What to do next?
 
 - Read the [documentation](https://autobrr.com)
-- Join our [Discord server](https://discord.gg/WQ2eUycxyT)
+- Join our [Discord server](https://discord.autobrr.com/)

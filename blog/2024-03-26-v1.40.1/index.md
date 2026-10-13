@@ -1,6 +1,7 @@
 ---
 slug: 1.40.1
 title: v1.40.1
+description: "autobrr v1.40.1 release notes: 1 bug fix, including could not create."
 authors: [rogerrabbit]
 ---
 
@@ -19,4 +20,4 @@ authors: [rogerrabbit]
 ## What to do next?
 
 - Read the [documentation](https://autobrr.com)
-- Join our [Discord server](https://discord.gg/WQ2eUycxyT)
+- Join our [Discord server](https://discord.autobrr.com/)

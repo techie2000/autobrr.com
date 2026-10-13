@@ -1,6 +1,7 @@
 ---
 slug: 1.39.0
 title: v1.39.0
+description: "autobrr v1.39.0 release notes: 7 bug fixes, including open used collapsible sections by default."
 authors: [rogerrabbit]
 ---
 
@@ -39,4 +40,4 @@ Various minor changes:
 ## What to do next?
 
 - Read the [documentation](https://autobrr.com)
-- Join our [Discord server](https://discord.gg/WQ2eUycxyT)
+- Join our [Discord server](https://discord.autobrr.com/)

@@ -23,4 +23,13 @@ yarn-error.log*
 package.json
 package-lock.json
 
+# Editors
 .vscode
+.idea
+
+# AI
+.agents
+.claude
+
+# scripts
+__pycache__
